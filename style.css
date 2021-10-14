@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(to left, #6f9e82 0%, #45649c 100%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+main {
+    position: relative;
+    display: flex;
+    width: 70rem;
+    height: 40rem;
+    border-radius: 10px;
+    background-image: linear-gradient(to top right,rgb(26, 87, 107) 0%, rgb(126, 96, 84) 100%);
+    overflow: hidden;
+}
+
+.player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 50%;
+    padding: 5rem;
+    opacity: 0.4;
+}
+.current {
+    text-align: center;
+    font-weight: bold;
+    background-color: #50689b;
+    padding: 1rem;
+    border-radius: 10px;
+    color: rgb(37, 17, 93);
+    width: 60%;
+}
+
+.score {
+    margin-bottom: auto;
+    font-weight: bold;
+    font-size: 5rem;
+    color: rgb(37, 17, 93)
+}
+
+.name {
+    font-size: 3rem;
+    margin-bottom: 3rem;   
+    font-weight: normal;
+}
+
+.current-score {
+    font-size: 3rem;
+}
+
+.current-label {
+    letter-spacing: 4px;
+}
+
+.btn {
+    background-color:azure;
+    position:absolute;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    color: rgb(78, 53, 53);
+    font-size: 1rem;
+    text-transform: inherit;
+}
+
+.btn-new {
+    top: 1rem;
+}
+
+.btn-roll {
+    top: 27rem;
+}
+
+.btn-catch {
+    top: 31rem;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn:active {
+    border-style: groove;
+}
+
+.dice {
+    position: absolute;
+    width: 6rem;
+    top: 25%;
+    left: 50%;transform: translate(-50%, 50%);
+}
+
+.player-active {
+    background-image:linear-gradient(to top right,rgb(68, 148, 175) 0%, rgb(212, 176, 160) 100%);
+    opacity: 1;
+}
+
+.player-active .name {
+    font-weight: 600;
+}
+
+.player-winner {
+   /* background-color:rgba(86, 240, 150, 0.664); */
+    background-image:linear-gradient(to top,rgb(58, 118, 146) 0%, rgba(86, 240, 150, 0.664) 50%);
+    opacity: 1;
+}
+
+.hidden {
+    display: none;
+}
